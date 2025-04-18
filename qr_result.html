@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR Code For Digital Restuarant Menu</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a href="" class="navbar-brand">Generate QR Code</a>
+        </div>
+    </nav>
+
+    <!-- QR Code Result -->
+     <div class="container mt-5 align-items-center text-center">
+        <h2>{{ res_name }}</h2>
+        <img src="{{ qr_url }}" alt=" QR code" style="border: 1px solid black;">
+        <div>
+            <a href="{{ qr_url }}" download="{{ file_name }}" class="btn btn-primary mt-3"> Download QR code</a>
+            <br>
+            <small>Thank you for using QR Code Generator Tool</small>
+        </div>
+     </div>
+</body>
+</html>
